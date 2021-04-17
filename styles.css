@@ -163,6 +163,30 @@ hr {
 }
 /* End About Us section */
 
+/* Services Header */
+.services-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* End Services Header */
+
+/* Services Details */
+.services-descriptions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #003862;
+    padding: 30px 50px;
+    color: white;
+}
+
+.services-descriptions div {
+    padding: 20px;
+}
+/* End Services Details */
+
 /* Footer */
 .footer {
     width: 100%;
@@ -253,6 +277,10 @@ hr {
 
     .hero-caption h1, .hero-caption h3 {
         margin: 8px;
+    }
+
+    .services-descriptions {
+        grid-template-columns: 100%;
     }
 }
 
