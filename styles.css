@@ -16,6 +16,7 @@ body a {
     text-decoration: none;
 }
 
+/* Navbar */
 .top-bar {
     width: 100%;
     display: flex;
@@ -56,6 +57,10 @@ body a {
     margin-left: 10px;
 }
 
+.nav-links ul li:nth-of-type(1) a {
+    font-weight: 600;
+}
+
 .navbar ul {
     display: flex;
     margin: 0;
@@ -75,7 +80,9 @@ body a {
 .nav-item a:hover {
     color: black;
 }
+/* End Navbar */
 
+/* Hero Section */
 .hero-section {
     width: 100%;
     margin: 0;
@@ -113,7 +120,9 @@ body a {
 hr {
     margin: 0;
 }
+/* End Hero Section */
 
+/* Who We Are Section */
 .who-we-are {
     position: relative;
     display: flex;
@@ -130,8 +139,10 @@ hr {
 .who-we-are-content {
     padding: 40px;
 }
+/* End Who We Are section */
 
-.contact-section {
+/* About US section */
+.about-us-section {
     width: 100%;
     background-color: white;
     display: flex;
@@ -139,18 +150,20 @@ hr {
     align-items: center;
 }
 
-.contact-section a {
+.about-us-section a {
     text-decoration: underline;
     color: #003862;
 }
 
 
-.contact-info {
+.about-info {
     color: #003862;
     padding: 40px;
     text-align: center;
 }
+/* End About Us section */
 
+/* Footer */
 .footer {
     width: 100%;
     display: flex;
@@ -173,7 +186,9 @@ hr {
     color: white;
     text-decoration: none;
 }
+/* End Footer section */
 
+/* Socket section */
 .socket {
     width: 100%;
     display: flex;
@@ -192,6 +207,7 @@ hr {
     color: white;
     font-size: 12px;
 }
+/* End Socket section */
 
 /* Media Queries */
 @media (max-width: 280px) {
