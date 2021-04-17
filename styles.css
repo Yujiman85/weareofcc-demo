@@ -4,7 +4,7 @@
     font-weight: 300;
 }
 
-body {
+html, body {
     font-family: "Titillium Web", sans-serif;
     overflow-x: hidden;
     margin: 0;
@@ -131,30 +131,6 @@ hr {
     padding: 40px;
 }
 
-.about-us {
-    width: 100%;
-    margin: 0;
-    position: relative;
-    max-height: 670px;
-    overflow: hidden;
-    box-shadow: 0 .7rem .7rem rgba(0, 0, 0, .2);
-}
-
-.elder-blood-pressure {
-    width: 100%;
-}
-
-.about-us-caption {
-    position: absolute;
-    top: 25%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .4);
-    color: white;
-    border-radius: 1rem;
-    padding: 5px 50px;
-    margin: 0 180px;
-}
-
 .contact-section {
     width: 100%;
     background-color: white;
@@ -217,13 +193,20 @@ hr {
     font-size: 12px;
 }
 
+/* Media Queries */
 @media (max-width: 280px) {
     .nav-links a {
         font-size: .9rem;
     }
+
+    .hero-caption {
+        top: 10% !important;
+        margin: 0 5px !important;
+        right: 0 !important;
+    }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     .navbar {
         justify-content: center;
         padding: 15px 0;
@@ -255,20 +238,11 @@ hr {
     .hero-caption h1, .hero-caption h3 {
         margin: 8px;
     }
-
-    .about-us {
-        display: none;
-    }
 }
 
-@media (min-width: 575.98px) and (max-width: 769.98px) {
-    .about-us {
-        max-height: 510px;
-    }
-
-    .about-us-caption {
+@media (min-width: 577px) and (max-width: 767px) {
+    .hero-caption {
         top: 10%;
-        margin: 0 90px;
-        padding: 5px 25px;
+        margin: 0 10px;
     }
 }
