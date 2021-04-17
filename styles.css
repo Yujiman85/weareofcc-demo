@@ -16,12 +16,31 @@ body a {
     text-decoration: none;
 }
 
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 0;
+    background-color: #003862;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.topBar-phone-number {
+    padding-right: 20px;
+}
+
 .navbar {
+    width: 100%;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 30px;
+    padding: 8px 30px;
     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
     z-index: 10;
 }
@@ -55,16 +74,6 @@ body a {
 
 .nav-item a:hover {
     color: black;
-}
-
-.nav-phone-number {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav-phone-number a {
-    color: #003862;
 }
 
 .hero-section {
@@ -208,6 +217,12 @@ hr {
     font-size: 12px;
 }
 
+@media (max-width: 280px) {
+    .nav-links a {
+        font-size: .9rem;
+    }
+}
+
 @media (max-width: 575.98px) {
     .navbar {
         justify-content: center;
@@ -219,7 +234,12 @@ hr {
     }
 
     .nav-links {
+        padding: 0 15px;
         margin-left: 0;
+    }
+
+    .nav-item {
+        padding: 0 10px;
     }
 
     .nav-phone-number {
@@ -239,12 +259,16 @@ hr {
     .about-us {
         display: none;
     }
+}
+
+@media (min-width: 575.98px) and (max-width: 769.98px) {
+    .about-us {
+        max-height: 510px;
+    }
 
     .about-us-caption {
         top: 10%;
-        margin: 0 10px;
+        margin: 0 90px;
         padding: 5px 25px;
-        overflow-y: auto;
-        max-height: 200px;
     }
 }
