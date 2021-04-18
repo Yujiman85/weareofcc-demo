@@ -219,6 +219,20 @@ hr {
 }
 /* End Features Header */
 
+/* Features Details */
+.features-descriptions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #003862;
+    padding: 30px 50px;
+    color: white;
+}
+
+.features-descriptions div {
+    padding: 20px;
+}
+/* End features Details */
+
 /* Footer */
 .footer {
     width: 100%;
