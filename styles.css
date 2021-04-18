@@ -57,10 +57,6 @@ body a {
     margin-left: 10px;
 }
 
-.nav-links ul li:nth-of-type(1) a {
-    font-weight: 600;
-}
-
 .navbar ul {
     display: flex;
     margin: 0;
@@ -170,6 +166,19 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./assets/images/nursetakingbloodpressure.jpg");
+    background-position: 0 25%;
+    background-size: 100%;
+    font-size: large;
+}
+
+.services-caption {
+    padding: 50px 15px;
+}
+
+.services-caption h1, .services-caption h3 {
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
 }
 /* End Services Header */
 
@@ -244,6 +253,15 @@ hr {
         margin: 0 5px !important;
         right: 0 !important;
     }
+
+    .services-caption {
+        padding: 0 10px;
+        font-size: .9rem;
+    }
+
+    .services-caption h1, .services-caption h3 {
+        margin: 5px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -277,6 +295,11 @@ hr {
 
     .hero-caption h1, .hero-caption h3 {
         margin: 8px;
+    }
+
+    .services-header {
+       max-height: 230px;
+       overflow: hidden;
     }
 
     .services-descriptions {
