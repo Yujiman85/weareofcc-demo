@@ -237,6 +237,31 @@ hr {
 }
 /* End features Details */
 
+/* Contact Header */
+.contact-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./assets/images/elderonphone.jpg");
+    background-position: 0 35%;
+    background-size: 100%;
+    font-size: large;
+    box-shadow: 0 .7rem .7rem rgba(0, 0, 0, .2);
+}
+
+.contact-caption {
+    padding: 50px 15px;
+}
+
+.contact-caption h1, .contact-caption h3 {
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+/* End Contact Header */
+
 /* Footer */
 .footer {
     width: 100%;
@@ -309,7 +334,16 @@ hr {
         font-size: .9rem;
     }
 
-    .features-caption h1, .services-caption h3 {
+    .features-caption h1, .features-caption h3 {
+        margin: 5px;
+    }
+
+    .contact-caption {
+        padding: 0 10px;
+        font-size: .9rem;
+    }
+
+    .contact-caption h1, .contact-caption h3 {
         margin: 5px;
     }
 }
@@ -363,6 +397,11 @@ hr {
  
      .features-descriptions {
          grid-template-columns: 100%;
+     }
+
+     .contact-header {
+        max-height: 230px;
+        overflow: hidden;
      }
 }
 
