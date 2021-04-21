@@ -262,6 +262,29 @@ hr {
 }
 /* End Contact Header */
 
+/* Contact Details */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003862;
+    color: white;
+    padding: 50px 0;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details a {
+    color: white;
+}
+
+.contact-details h1 {
+    margin: 10px 0;
+}
+/* End Contact Details */
+
 /* Footer */
 .footer {
     width: 100%;
@@ -346,6 +369,10 @@ hr {
     .contact-caption h1, .contact-caption h3 {
         margin: 5px;
     }
+
+    .contact-details h1 {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -402,6 +429,10 @@ hr {
      .contact-header {
         max-height: 230px;
         overflow: hidden;
+     }
+
+     .contact-details {
+         font-size: smaller;
      }
 }
 
